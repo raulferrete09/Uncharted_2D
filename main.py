@@ -6,7 +6,6 @@ WIN= pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("First Game!")
 
 WHITE = (255,255,255)
-BLACK =(0,0,0)
 BORDER = pygame.Rect(0,0,WIDTH,HEIGHT)
 FPS = 60
 VEL = 5
@@ -14,7 +13,6 @@ CHARACTER_WIDTH, CHARACTER_HEIGHT = 60,60
 MAIN_CHARACTER_IMAGE = pygame.image.load(
     os.path.join("Assets","explorer-pixel-rpg_icon.png"))
 MAIN_CHARACTER = pygame.transform.scale(MAIN_CHARACTER_IMAGE,(CHARACTER_WIDTH,CHARACTER_HEIGHT))
-
 
 def draw_window(character):
     WIN.fill(WHITE)
